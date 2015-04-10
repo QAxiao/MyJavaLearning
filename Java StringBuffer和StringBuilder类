@@ -2,7 +2,8 @@ public class Test{
 
     public static void main(String args[]){
        StringBuffer sBuffer = new StringBuffer(" test");
-       sBuffer.append(" String Buffer");
-       System.ou.println(sBuffer);  
+       sBuffer.append(" String Buffer");  //append方法用来累积字符串,
+       当需要大量的字符串拼接时使用优点效率比+=要高很多(+=内存中是相当于创建副本重新赋值，StringBuffer是指针的引用)
+       System.out.println(sBuffer);  
    }
 }
